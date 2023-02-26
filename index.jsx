@@ -1,4 +1,4 @@
-//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
+
 
 // const { Configuration, OpenAIApi } = require("openai");
 const  { Configuration, OpenAIApi }  = require('openai');
@@ -8,7 +8,7 @@ const cors = require('cors');
 
 const configuration = new Configuration({
     organization: "org-fAsEvdbwZmAF4rvV72B59M1E",
-    apiKey: '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',
+    apiKey: process.env.OPENAI_API_KEY,
 });
 const openai = new OpenAIApi(configuration);
 
